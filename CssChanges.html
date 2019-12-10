@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Changes</title>
+  </head>
+  <script type="text/javascript">
+     function changeColor(){
+       document.getElementById("example").style.backgroundColor = "red";
+     }
+     function changeText(){
+       var color = document.getElementById('color').value;
+       document.getElementById("example").style.color = color;
+     }
+     function moveRight(){
+       document.getElementById("example").style.textAlign = "right";
+     }
+     function image(){
+       document.body.style.backgroundImage = "url('img_img/img1.jpg')";
+     }
+  </script>
+  <body>
+    <div id="example">This is some stuff in the div!</div>
+    Color: <input type="text" name="color" id="color"/><br />
+    <button type="button" onClick="changeColor()">Red</button>
+    <button type="button" onClick="changeText()">Text</button>
+    <button type="button" onClick="moveRight()">Right</button>
+    <button type="button" onClick="image()">Images</button>
+  </body>
+</html>
